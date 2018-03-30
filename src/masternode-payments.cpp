@@ -271,14 +271,14 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int nBlockH
     if(!mnpayments.GetBlockPayee(nBlockHeight, payee)) {
         // no masternode detected...
         int nCount = 0;
-        CMasternode *winningNode = mnodeman.GetNextMasternodeInQueueForPayment(nBlockHeight, true, nCount);
-        if(!winningNode) {
-            // ...and we can't calculate it on our own
-            LogPrintf("CMasternodePayments::FillBlockPayee -- Failed to detect masternode to pay\n");
-            return;
-        }
+        // CMasternode *winningNode = mnodeman.GetNextMasternodeInQueueForPayment(nBlockHeight, true, nCount);
+        // if(!winningNode) {
+        //     // ...and we can't calculate it on our own
+        //     LogPrintf("CMasternodePayments::FillBlockPayee -- Failed to detect masternode to pay\n");
+        //     return;
+        // }
         // fill payee with locally calculated winner and hope for the best
-        payee = GetScriptForDestination(winningNode->pubKeyCollateralAddress.GetID());
+        // payee = GetScriptForDestination(winningNode->pubKeyCollateralAddress.GetID());
     }
 
     // GET MASTERNODE PAYMENT VARIABLES SETUP
