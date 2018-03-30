@@ -1,0 +1,6 @@
+usr/local/bin/potato-qt usr/bin
+share/pixmaps/potato32.xpm usr/share/pixmaps
+share/pixmaps/potato16.xpm usr/share/pixmaps
+share/pixmaps/potato128.png usr/share/pixmaps
+debian/potato-qt.desktop usr/share/applications
+debian/potato-qt.protocol usr/share/kde4/services/

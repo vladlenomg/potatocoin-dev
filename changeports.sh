@@ -1,0 +1,7 @@
+find ./src/rpcserver.cpp -type f -print0 | xargs -0 sed -i 's/8818/8819/g'
+find ./src/chainparamsbase.cpp -type f -print0 | xargs -0 sed -i 's/8818/8819/g'
+find ./src/chainparamsbase.cpp -type f -print0 | xargs -0 sed -i 's/18818/18819/g'
+find ./src/chainparamsbase.cpp -type f -print0 | xargs -0 sed -i 's/15332/18820/g'
+find ./src/chainparams.cpp -type f -print0 | xargs -0 sed -i 's/14520/18808/g'
+find ./src/chainparams.cpp -type f -print0 | xargs -0 sed -i 's/15520/18908/g'
+find ./src/chainparams.cpp -type f -print0 | xargs -0 sed -i 's/16520/18988/g'
